@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="vi" data-color-scheme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vuong Doan</title>
+  <!-- boottraps -->
+  <link rel="stylesheet" href="/boottraps/assets/all.min.css" />
+  <link rel="stylesheet" href="/boottraps/assets/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <!--End boottraps -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="../assets/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <!-- Slicky -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <!-- Slicky -->
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-top text-white text-center py-2">
+      VƯỢNG ĐOÀN - CHUYÊN CUNG CẤP CÁC DÒNG XE: XE BEN, XE ĐẦU KÉO, XE TẢI, XE
+      CHUYÊN DỤNG
+    </div>
+
+    <div class="header-main">
+      <div class="inner-logo">
+        <a href="#"><img src="../image/logo-fb.png" alt="Logo" class="me-2" style="height: 60px" /></a>
+        <a href="#" class="inner-decs">VƯỢNG ĐOÀN</a>
+      </div>
+
+      <!-- Menu d esktop -->
+      <nav class="d-none d-md-flex inner-decs">
+        <a href="#" class="fw-semibold text-decoration-none inner-tags">TRANG CHỦ</a>
+        <a href="#" class="fw-semibold text-decoration-none inner-tags">GIỚI THIỆU</a>
+        <div class="dropdown-custom">
+          <a href="#" class="fw-semibold text-decoration-none inner-tags">SẢN PHẨM</a>
+          <div class="submenu-custom">
+            <a href="#">Isuzu</a>
+            <a href="#">Teraco</a>
+            <a href="#">Hyundai</a>
+          </div>
+        </div>
+        <a href="#" class="fw-semibold text-decoration-none inner-tags">DỊCH VỤ</a>
+      </nav>
+
+      <nav class="d-none d-md-flex inner-icons">
+        <a href="#" class="text-dark fw-semibold text-decoration-none inner-face"><i
+            class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="text-dark fw-semibold text-decoration-none inner-mess"><i
+            class="fa-brands fa-facebook-messenger"></i></a>
+        <a href="#" class="text-dark fw-semibold text-decoration-none inner-home">
+          <i class="fa-solid fa-house"></i>
+        </a>
+      </nav>
+
+      <!-- Button -->
+      <button type="button" class="btn modal-button button-social" data-bs-toggle="modal"
+        data-bs-target="#exampleModal">
+        Tư vấn ngay
+      </button>
+
+      <!-- Mobile menu icon -->
+      <button class="btn d-md-none button-mobile" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Offcanvas Menu Mobile -->
+  <div class="offcanvas offcanvas-end" id="mobileMenu">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Menu</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column gap-3">
+      <a href="#" class="text-dark text-decoration-none">TRANG CHỦ</a>
+      <a href="#" class="text-dark text-decoration-none">GIỚI THIỆU</a>
+      <a href="#" class="text-dark text-decoration-none">SẢN PHẨM</a>
+      <a href="#" class="text-dark text-decoration-none">DỊCH VỤ</a>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade modal-form" id="exampleModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header flex-column">
+          <img src="../image/logo-fb.png" alt="Logo" class="mb-2 inner-image" style="height: 60px" />
+          <h5 class="modal-title inner-tittle">
+            Gửi yêu cầu tư vấn miễn phí
+          </h5>
+          <p class="inner-decs">
+            38.000+ doanh nghiệp & chủ shop đã tin dùng
+          </p>
+          <button type="button" class="btn-close position-absolute end-0 top-0 m-3" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="row">
+              <div class="col-12 inner-decs">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Họ Và Tên *" />
+                </div>
+              </div>
+              <div class="col-12 inner-decs">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Số Điện Thoại *" />
+                </div>
+              </div>
+              <div class="col-12 inner-decs">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Nội Dung *" />
+                  <div class="col-12">
+                    <button class="button">Gửi ngay</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slider -->
+
+  <!-- Slider với nút custom -->
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../image/section1.jpg" class="d-block w-100" alt="Slide 1" />
+      </div>
+      <div class="carousel-item">
+        <img src="../image/section1.jpg" class="d-block w-100" alt="Slide 2" />
+      </div>
+      <div class="carousel-item">
+        <img src="../image/section1.jpg" class="d-block w-100" alt="Slide 3" />
+      </div>
+    </div>
+    <!-- Nút custom -->
+    <!-- <div class="custom-controls">
+      <button class="prev-btn">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button class="next-btn">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+    <script>
+      const carousel = document.querySelector("#carouselExampleIndicators");
+      const prevBtn = document.querySelector(".prev-btn");
+      const nextBtn = document.querySelector(".next-btn");
+
+      prevBtn.addEventListener("click", () => {
+        const carouselInstance = bootstrap.Carousel.getInstance(carousel);
+        carouselInstance.prev();
+      });
+
+      nextBtn.addEventListener("click", () => {
+        const carouselInstance = bootstrap.Carousel.getInstance(carousel);
+        carouselInstance.next();
+      });
+    </script> -->
+    <!-- Nội dung -->
+    <div class="section-two">
+      <div class="container mt-4">
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-3 inner-decs wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+            <p class="fs-5">
+              Các sản phẩm xe tải, xe ben, xe đầu kéo, xe chuyên dùng và xe năng
+              lượng mới được nhập khẩu và phân phối chính hãng, chất lượng tuyệt
+              đối. Giá thành rẻ nhất đi kèm các chương trình khuyến mãi hấp dẫn.
+              Quy trình bảo hành, bảo dưỡng, sửa chữa và cung cấp phụ tùng đạt
+              tiêu chuẩn toàn cầu của các hãng xe, đáp ứng mọi nhu cầu của quý
+              khách hàng.
+            </p>
+          </div>
+          <div class="col-md-6 inner-picture wow fadeInRight " data-wow-duration="1s" data-wow-delay="0.3s">
+            <img src="../image/sectionbot.jpg" class="img-fluid rounded" alt="Ảnh sản phẩm" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-two-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-3 inner-order">
+            <div class="inner-picture">
+              <img src="../image/picture-two.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-6 mb-3 ">
+            <div class="inner-decs">
+              <h2>Connect to social media in seconds</h2>
+              <p> Already using Facebook? That makes it even easier to build your online portfolio. Pull in photos right
+                from your existing accounts, so your website is ready in a snap.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Các mẫu xe -->
+    <div class="section-three">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-12">
+            <div class="inner-main">
+              <div class="inner-top">
+                <h2 class="box-tittle">Tham khảo mẫu xe</h2>
+                <div class="inner-box-inline">
+                </div>
+                <p class="inner-box-decs">Nơi chia sẻ kiến thức quản lý và bán hàng trên website thiết thực nhất
+                </p>
+              </div>
+              <div class="inner-body">
+                <div class="container">
+                  <div class="row">
+                    <div
+                      nh-owl-slick="{&quot;infinite&quot;:true,&quot;slidesToShow&quot;:3,&quot;slidesToScroll&quot;:3,&quot;dots&quot;:true,&quot;arrows&quot;:false,&quot;autoplay&quot;:true,&quot;autoplaySpeed&quot;:4000,&quot;responsive&quot;:[{&quot;breakpoint&quot;:992,&quot;settings&quot;:{&quot;slidesToShow&quot;:2,&quot;slidesToScroll&quot;:2}},{&quot;breakpoint&quot;:768,&quot;settings&quot;:{&quot;slidesToShow&quot;:2,&quot;slidesToScroll&quot;:2,&quot;arrows&quot;:false}},{&quot;breakpoint&quot;:576,&quot;settings&quot;:{&quot;slidesToShow&quot;:2,&quot;slidesToScroll&quot;:2}},{&quot;breakpoint&quot;:481,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesToScroll&quot;:1}}]}"
+                      class="slick-initialized slick-slider slick-dotted" loaded="1">
+                      <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <!-- Slide Item 1 -->
+                          <div class="swiper-slide">
+                            <div class="blog-card-custom">
+                              <a href="#"><img src="../image/section-3.jpg" alt=""></a>
+                              <div class="card-body">
+                                <h5 class="card-title">Top 10 Trang Web AI Hỗ Trợ Lập Trình Viên Hiệu Quả Nhất</h5>
+                                <div class="card-meta">
+                                  <span>16/02/2025</span>
+                                  <span>TỔNG HỢP, BLOG</span>
+                                </div>
+                                <p class="card-text">Khám phá top 10 trang web AI giúp lập trình viên tăng hiệu suất làm
+                                  việc, tối ưu hóa...</p>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Slide Item 2 -->
+                          <div class="swiper-slide">
+                            <div class="blog-card-custom">
+                              <a href="#"><img src="../image/section-3-2.jpg" alt=""></a>
+                              <div class="card-body">
+                                <h5 class="card-title">Top 10 Trang Web AI Viết Content Tự Động</h5>
+                                <div class="card-meta">
+                                  <span>16/02/2025</span>
+                                  <span>TỔNG HỢP, BLOG</span>
+                                </div>
+                                <p class="card-text">AI giúp bạn tạo nội dung nhanh, chuẩn SEO, sáng tạo và hiệu quả...
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Slide Item 3 -->
+                          <div class="swiper-slide">
+                            <div class="blog-card-custom">
+                              <a href="#"><img src="../image/section-3-3.jpg" alt=""></a>
+                              <div class="card-body">
+                                <h5 class="card-title">JS TIPS – Viết JavaScript gọn hơn</h5>
+                                <div class="card-meta">
+                                  <span>18/06/2023</span>
+                                  <span>BLOG, LẬP TRÌNH</span>
+                                </div>
+                                <p class="card-text">Gợi ý những tips giúp bạn viết JS ngắn gọn, sạch sẽ hơn...</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Slide Item 4 -->
+                          <div class="swiper-slide">
+                            <div class="blog-card-custom">
+                              <a href="#"><img src="../image/section-3-4.jpg" alt=""></a>
+                              <div class="card-body">
+                                <h5 class="card-title">Thiết kế website học trực tuyến</h5>
+                                <div class="card-meta">
+                                  <span>22/10/2022</span>
+                                  <span>THIẾT KẾ, BLOG</span>
+                                </div>
+                                <p class="card-text">Website dạy học trực tuyến đang là mô hình được ưa chuộng...</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Slide Item 5 -->
+                          <div class="swiper-slide">
+                            <div class="blog-card-custom">
+                              <a href="#"><img src="../image/teraco.png" alt=""></a>
+                              <div class="card-body">
+                                <h5 class="card-title">Top 10 Trang Web AI Viết Content Tự Động</h5>
+                                <div class="card-meta">
+                                  <span>16/02/2025</span>
+                                  <span>TỔNG HỢP, BLOG</span>
+                                </div>
+                                <p class="card-text">AI giúp bạn tạo nội dung nhanh, chuẩn SEO, sáng tạo và hiệu quả...
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Slide Item 6 -->
+                          <div class="swiper-slide">
+                            <div class="blog-card-custom">
+                              <a href="#"><img src="../image/teraco2.png" alt=""></a>
+                              <div class="card-body">
+                                <h5 class="card-title">Top 10 Trang Web AI Viết Content Tự Động</h5>
+                                <div class="card-meta">
+                                  <span>16/02/2025</span>
+                                  <span>TỔNG HỢP, BLOG</span>
+                                </div>
+                                <p class="card-text">AI giúp bạn tạo nội dung nhanh, chuẩn SEO, sáng tạo và hiệu quả...
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-pagination text-center mt-3"></div>
+                      </div>
+                    </div>
+                    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Các mẫu xe -->
+    <!-- Form Đăng ký -->
+    <!-- <section class="section-two container my-5">
+      <div class="inner-main overflow-hidden rounded-3">
+        <div class="inner-head text-center text-white p-3">
+          <h2 class="inner-tittle">Form đăng ký tư vấn xe</h2>
+          <p class="inner-decs">
+            Bạn có thể nhập thông tin cá nhân, để được hỗ trợ tư vấn.
+          </p>
+        </div>
+        <div class="inner-body border p-4">
+          <form>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Họ và Tên *"
+                />
+              </div>
+              <div class="col-md-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Số Điện Thoại *"
+                />
+              </div>
+              <div class="col-12">
+                <textarea
+                  class="form-control"
+                  rows="4"
+                  placeholder="Nội Dung *"
+                ></textarea>
+              </div>
+              <div class="col-12 text-center">
+                <button
+                  class="btn text-white px-5 py-2"
+                  style="
+                    background: linear-gradient(-30deg, #f57f20, #d62b08);
+                    border-radius: 45px;
+                  "
+                >
+                  Đăng ký tư vấn
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section> -->
+
+         <!-- Google Map -->
+    <div class="google-map">
+              <div class="inner-top">
+            <h2 class="box-tittle wow zoomIn">Show Room</h2>
+            <div class="inner-box-inline">
+            </div>
+            <p class="inner-box-decs">Địa chỉ: 579, QL 1A, Tổ 18, Ấp Ngũ Phúc, Xã Hố Nai 3, H. Trảng Bom, Đồng Nai
+            </p>
+             <p class="inner-box-decs">Thứ 2 đến Thứ 6: Từ 7h30 đến 17h
+              Thứ 7: Từ 7h30 đến 16h</p>
+            <p class="inner-box-decs">Điện thoại: 0901.308.178 – 0919.863.279
+              Fax: 02513 984 028
+            </p>
+          </div>
+   <iframe
+   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.972546022007!2d106.9225955742251!3d10.965444755680458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174e744c3862473%3A0x4da31733f53d4495!2zw5QgVMO0IEhvw6AgUGjDumM!5e0!3m2!1svi!2s!4v1681530524897!5m2!1svi!2s"
+   width="100%" height="650" style="border: 0" allowfullscreen="" loading="lazy"
+   referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+ <!-- End Google Map -->
+    <!-- section-four -->
+    <div class="section-four">
+      <div class="container">
+        <div class="row">
+          <div class="inner-top">
+            <h2 class="box-tittle wow zoomIn">Talk To Us</h2>
+            <div class="inner-box-inline">
+            </div>
+            <p class="inner-box-decs">Nơi chia sẻ kiến thức quản lý và bán hàng trên website thiết thực nhất</p>
+          </div>
+        </div>
+        <div class="inner-body">
+          <div class="row">
+            <div class="col-md-4 col-sm-12">
+              <div class="inner-content">
+                <h4 class="inner-tittle">Keep in touch</h4>
+                <p> 110-220 Quisque diam odio, maximus ac
+                  consectetur eu, 10260
+                  auctor non lorem </p>
+                <p>You are NOT allowed to re-distribute Softy Pinko
+                  template on any template collection websites
+                  Thank you</p>
+              </div>
+            </div>
+            <div class="col-md-8 col-sm-12">
+              <form action="" class="inner-form">
+                <div class="row">
+                  <div class="col-lg-6 col-md-12 col-sm-12">
+                    <input type="text" placeholder="Full Name">
+                  </div>
+                  <div class="col-lg-6 col-md-12 col-sm-12">
+                    <input type="text" placeholder="Email-Address">
+                  </div>
+                  <div class="col-lg-12">
+                    <textarea name="" id="" placeholder="Your Message"></textarea>
+                  </div>
+                  <div class="col-12 ">
+                    <button class="btn text-white px-5 py-2" style="
+                            background: linear-gradient(-30deg, #f57f20, #d62b08);
+                            border-radius: 45px;
+                          ">
+                      Đăng ký tư vấn
+                    </button>
+                  </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!--End section-four -->
+    <div class="section-five">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="product-list">
+              <div class="product-item ">
+                <a href=""><img src="../image/Isuzu-logo.png" alt=""></a>
+              </div>
+              <div class="product-item">
+                <a href=""><img src="../image/teraco-logo.png" alt=""></a>
+              </div>
+              <div class="product-item">
+                <a href=""><img src="../image/hyundai-logo.png" alt=""></a>
+              </div>
+              <div class="product-item">
+                <a href=""><img src="../image/jac-logo.png" alt=""></a>
+              </div>
+              <div class="product-item">
+                <a href=""><img src="../image/Hino-logo.png" alt=""></a>
+              </div>
+              <div class="product-item">
+                <a href=""><img src="../image/Hino-logo.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section-five -->
+    <!-- End section-five -->
+    <!-- Nút gọi điện -->
+    <div class="mobie-phone">
+      <a href="tel:0987654321" class="call-button">
+        <i class="fas fa-phone"></i>
+      </a>
+    </div>
+    <footer>
+        <div class="section-six">
+          <div class="container">
+              <div class="row">
+                <!-- <div class="col-md-12 footer-inline">
+                  <div class="footer-form">
+                  </div>
+                  <div class="footer-input">
+                    <input type="text" placeholder="So dien thoai can tu van">
+                    <button class="btn text-white px-5 py-2" style="
+                    background: linear-gradient(-30deg, #f57f20, #d62b08);
+                    border-radius: 45px;
+                  ">
+              Đăng ký tư vấn
+            </button>
+                  </div>
+                </div> -->
+      
+                <div class="col-md-2 col-sm-12">
+                    <div class="footer-info">
+                        <div class="footer-tittle">
+                            <h2>LOGO</h2>
+                        </div>
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="footer-tittle">
+                      <h2>vuongoto.vn</h2>
+                    </div>
+                    <address>
+                      <b>CÔNG TY TNHH MTV Ô TÔ HÒA PHÚC</b>
+                      <p>Trụ Sở :Số 579, QL1A ,Tổ 18, Ấp Ngũ Phúc , Xã Hố Nai 3, H.Trảng Bom,T. Đồng Nai</p>
+                      <p>Hotline:0987654321</p>
+                      <p>Email:vuongdoan660@gmail.com</p>
+                      <p>ĐKKD Số : 3603266238.
+                      </p>
+                    </address>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <div class="footer-tittle">
+                      <h2>Mang xa hoi</h2>
+                    </div>
+                    
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <div class="footer-title">
+                      <h2>Theo doi Fanpage</h2>
+                      <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhoaphucauto&amp;tabs=timeline&amp;width=340&amp;height=500&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId" width="340" height="350" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="/boottraps/assets/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../contents/animate.js"></script>
+    <script src="../contents/java.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('.product-list').slick({
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1000,
+          arrows: false,
+          dots: false,
+          pauseOnHover: false,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: { slidesToShow: 3 }
+            },
+            {
+              breakpoint: 480,
+              settings: { slidesToShow: 2 }
+            }
+          ]
+        });
+      });
+    </script>
+
+
+
+
+</body>
+
+</html>

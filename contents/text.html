@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chuyển ảnh tự động và thủ công</title>
+    <style>
+      img {
+        width: 400px;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        margin-top: 10px;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Chuyển ảnh theo thời gian và bấm nút</h2>
+
+    <img id="myImage" src="image1.jpg" alt="Ảnh hiển thị" />
+
+    <br />
+    <button onclick="nextImage()">Tiếp</button>
+
+    <script>
+      // Danh sách các ảnh
+      const images = ["image1.jpg", "image2.jpg", "image3.jpg"];
+      let currentIndex = 0;
+
+      // Hàm chuyển ảnh kế tiếp
+      function nextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        document.getElementById("myImage").src = images[currentIndex];
+      }
+
+      // Hàm tự động chuyển ảnh sau mỗi 3 giây
+      setInterval(nextImage, 3000);
+    </script>
+  </body>
+</html>

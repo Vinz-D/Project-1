@@ -1,0 +1,47 @@
+.header-top {
+  background: linear-gradient(-30deg, #f57f20, #d62b08);
+}
+
+.modal-button {
+  background: linear-gradient(-30deg, #f57f20, #d62b08);
+  border-radius: 45px;
+}
+
+.call-button {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #28a745;
+  color: #fff;
+  padding: 14px;
+  border-radius: 50%;
+  font-size: 20px;
+  z-index: 999;
+}
+
+.inner-title {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.inner-desc {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+form input,
+form textarea {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #f57f20;
+  box-shadow: 0 0 5px rgba(245, 127, 32, 0.5);
+}
+
+button[type="submit"]:hover {
+  opacity: 0.9;
+}

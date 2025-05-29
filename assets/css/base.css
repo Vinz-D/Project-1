@@ -27,6 +27,10 @@
   }
 }
 
+footer{
+  background: -webkit-linear-gradient(-30deg, #f57f20, #d62b08 100%);
+  color: white;
+}
 
 
 :root {

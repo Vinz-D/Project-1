@@ -68,6 +68,12 @@
   color: #fff;
 }
 
+@media (max-width:578px) {
+  .modal-button{
+    display: none;
+  }
+}
+
 .header-main .button-social:hover {
   opacity: 0.9;
   z-index: 1;
@@ -196,6 +202,7 @@
 }
 
 .button-mobile {
+  font-size: 2;
 }
 
 .mobile-menu a {
@@ -821,3 +828,23 @@ s .section-four .inner-content .inner-tittle {
   text-align: center;
   box-shadow: 0 1px 3px 0 rgb(0 0 0 /10%);
 }
+
+
+.section-six{
+  background: -webkit-linear-gradient(-30deg, #f57f20, #d62b08 100%);
+  color: white;
+} 
+
+.section-six .footer-title{
+
+}
+
+.footer-list{
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.offcanvas-body{
+  margin-top: 120px;
+}
+
